@@ -17,6 +17,10 @@ return [
     'short' => [
         'name' => env('APP_SHORT_NAME', 'Laravel')
     ],
+    'header' => [
+        'logo' => env('APP_HEADER_LOGO', true),
+        'description' => env('APP_HEADER_DESCRIPTION', '')
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Environment

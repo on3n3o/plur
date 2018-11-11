@@ -4,7 +4,7 @@
   </button>
 
   <div class="navbar-brand">
-    <div class="navbar-brand-full">{{ config('app.short.name') ?: config('app.name') }}</div>
+    <div class="navbar-brand-full">{!! config('app.header.logo') ? '<img src="/images/logo.png" height="45px" />' : '' !!}{{ config('app.header.logo') ? ' ' : config('app.short.name') ?: config('app.name') }}</div>
     <div class="navbar-brand-minimized">{{ config('app.short.name') ?: config('app.name') }}</div>
   </div>
 

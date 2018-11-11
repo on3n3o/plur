@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{config('app.name')}} - Simplify your links</title>
+  <title>{{config('app.name')}} - {{config('app.header.description')}} - Simplify your links</title>
 
   {!! style(mix('css/frontend.css')) !!}
 </head>
@@ -13,7 +13,7 @@
 <body class="@yield('css_class')">
 <nav class="navbar navbar-expand navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="{{ url('/') }}">{{config('app.name')}}</a>
+    <a class="navbar-brand" href="{{ url('/') }}">{!! config('app.header.logo') ? '<img height="47px" src="/images/logo.png" alt="' . config('app.name'). '"/>' : ' ' !!}&nbsp;&nbsp;{{config('app.header.logo') ? config('app.header.description') : config('app.name') . ' - ' . config('app.header.description')}}</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto"></ul>
