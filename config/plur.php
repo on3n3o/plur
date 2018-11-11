@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'version' => 'build.181108',
+    'version' => 'build.on3n3o.develop',
 
     'hash_size_1'   => 6, // >= 1
     'hash_size_2'   => 7, // >= 0

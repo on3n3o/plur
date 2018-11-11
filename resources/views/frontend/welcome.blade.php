@@ -15,7 +15,7 @@
         <div class="input-group input-group-lg original-url">
           <input name="long_url" placeholder="Paste a link to be shortened" class="form-control" id="inputSourceLink" type="text" value="{{ old('long_url') }}">
           <div class="input-group-append">
-            <button class="btn" type="submit" id="actProcess">@lang('Shorten')</button>
+            <button class="btn" type="submit" id="actProcess">@lang('messages.shorten')</button>
           </div>
         </div>
 
