@@ -4,8 +4,8 @@
   </button>
 
   <div class="navbar-brand">
-    <div class="navbar-brand-full">{{ config('app.short.name') ?: config('app.name') }}</div>
-    <div class="navbar-brand-minimized">{{ config('app.short.name') ?: config('app.name') }}</div>
+    <div class="navbar-brand-full">{{ Request::server('HTTP_HOST') }}</div>
+    <div class="navbar-brand-minimized">{{ Request::server('HTTP_HOST') }}</div>
   </div>
 
   <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
